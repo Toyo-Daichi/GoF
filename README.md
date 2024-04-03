@@ -37,3 +37,12 @@ public class Adapter extends Adaptee
 // or
 public class Adapter extends Adaptee implements Target
 ```
+
+## 3. Template Method
+
+### Pattern
+- **AbstractClass** : `AbstractDisplay` Class have `open()`, `print()`, `close()` method.
+- **ConcreteClass** : `CharDisplay`, `StringDisplay` Class is ConcreteClass of `AbstractDisplay` Class.
+```java
+public ConcreteClass extends AbstractClass
+```
