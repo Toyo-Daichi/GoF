@@ -1,4 +1,4 @@
-# GoF ~Design Pattern~
+# GoF (Design Pattern)
 
 ## 1. Iterator
 
@@ -23,4 +23,17 @@ public class BookShelf implements Iteratable<Book> {}
 - **ConcreteIterator** : Detail of `Iterator` Interface is BookShelfIterator.
 ```java
 public class BookShelfIterator implements Iterator<Book> {}
+```
+
+## 2. Adapter
+
+### Pattern
+- **Target** : `Print` Interface have `printWeak()`, `printStrong()` method.
+- **Client** : `Main` Class use `Print` Interface.
+- **Adaptee** (適合される側) : `Banner` Class have `showWithParen()`, `showWithAster()` method.
+- **Adapter** (適合する側) : `PrintBanner` Class is Adapter of `Banner` Class.
+```java
+public class Adapter extends Adaptee
+// or
+public class Adapter extends Adaptee implements Target
 ```
